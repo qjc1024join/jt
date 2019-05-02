@@ -40,6 +40,7 @@ public class ItemServiceImpl implements ItemService {
         EasyUIData responseResult=new EasyUIData();
         responseResult.setRows(records);
         responseResult.setTotal((int) itemIPage.getTotal());
+        System.out.println("===============");
         return responseResult;
     }
     @Transactional
